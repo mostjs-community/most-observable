@@ -1,6 +1,6 @@
 # most-observable
 
-Create `@most/core` streams ES observables.
+Create `@most/core` streams from ES observables.
 
 ## Install
 
