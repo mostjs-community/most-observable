@@ -1,6 +1,6 @@
 # most-observable
 
-Create `@most/core` streams from ES observables.
+Create `@most/core` streams from [ES observables](https://github.com/tc39/proposal-observable).
 
 ## Install
 
@@ -10,7 +10,7 @@ Create `@most/core` streams from ES observables.
 
 ## Example
 
-Creating state stream from redux store as it an Observable but any ES observable should work.
+Creating state stream from redux store as it is an Observable but any [ES observable](https://github.com/tc39/proposal-observable) should work.
 
 ```javascript
 import fromObservable from "most-observable";
