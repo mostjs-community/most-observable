@@ -2,7 +2,7 @@
   "name": "most-observable",
   "version": "0.0.1",
   "description": "Create @most/core compatible streams from observables",
-  "main": "index.js",
+  "main": "dist/main.js",
   "author": "Kanit Sharma",
   "license": "MIT",
   "scripts": {
