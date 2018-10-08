@@ -9,7 +9,6 @@
     "build": "node build.js"
   },
   "dependencies": {
-    "@most/scheduler": "^1.2.1",
     "symbol-observable": "^1.2.0"
   },
   "peerDependencies": {
