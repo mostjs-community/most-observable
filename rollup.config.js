@@ -5,8 +5,8 @@ import * as pkg from "./package.json";
 export default {
   input: r(__dirname, "src/index.ts"),
   output: [
-    { file: r(__dirname, "dist/index.js"), format: "cjs" },
-    { file: r(__dirname, "dist/index.mjs"), format: "esm" }
+    { file: r(__dirname, "dist/index.js"), format: "cjs", exports: "named" },
+    { file: r(__dirname, "dist/index.mjs"), format: "esm", exports: "named" }
   ],
   plugins: [
     typescript({
