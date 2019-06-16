@@ -1,4 +1,5 @@
 import { resolve as r } from "path";
+import typescript from "rollup-plugin-typescript2";
 import * as pkg from "./package.json";
 
 export default {
@@ -6,6 +7,12 @@ export default {
   output: [
     { file: r(__dirname, "dist/index.js"), format: "cjs" },
     { file: r(__dirname, "dist/index.mjs"), format: "esm" }
+  ],
+  plugins: [
+    typescript({
+      typescript: require("typescript"),
+      cacheRoot: r(__dirname, "node_modules/.cache/rollup-plugin-typescript2")
+    })
   ],
   external: [
     ...Object.keys(pkg.dependencies),

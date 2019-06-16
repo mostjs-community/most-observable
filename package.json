@@ -4,6 +4,7 @@
   "description": "Create @most/core compatible streams from observables",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "author": "Kanit Sharma",
   "license": "MIT",
   "scripts": {
@@ -17,6 +18,10 @@
     "@most/scheduler": "^1.2.2"
   },
   "devDependencies": {
-    "rollup": "^1.15.6"
+    "@most/scheduler": "^1.2.2",
+    "@most/types": "^1.0.1",
+    "rollup": "^1.15.6",
+    "rollup-plugin-typescript2": "^0.21.1",
+    "typescript": "^3.5.2"
   }
 }
